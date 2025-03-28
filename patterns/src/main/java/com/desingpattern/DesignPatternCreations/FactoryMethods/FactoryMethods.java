@@ -1,5 +1,6 @@
 package com.desingpattern.DesignPatternCreations.FactoryMethods;
 
+import com.desingpattern.DesignPatternCreations.FactoryMethods.interfaces.NotifyInterface;
 import com.desingpattern.DesignPatternCreations.FactoryMethods.typesOfMessages.Email;
 import com.desingpattern.DesignPatternCreations.FactoryMethods.typesOfMessages.Push;
 import com.desingpattern.DesignPatternCreations.FactoryMethods.typesOfMessages.Sms;

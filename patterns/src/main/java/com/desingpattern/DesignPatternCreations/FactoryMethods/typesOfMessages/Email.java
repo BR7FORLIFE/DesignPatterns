@@ -1,6 +1,6 @@
 package com.desingpattern.DesignPatternCreations.FactoryMethods.typesOfMessages;
 
-import com.desingpattern.DesignPatternCreations.FactoryMethods.NotifyInterface;
+import com.desingpattern.DesignPatternCreations.FactoryMethods.interfaces.NotifyInterface;
 
 public class Email implements NotifyInterface{
     @Override
