@@ -1,6 +1,6 @@
 package com.desingpattern.DesignPatternCreations.AbstractMethods;
-
-import com.desingpattern.DesignPatternCreations.AbstractMethods.Factorys.MySqlFactory;
+import java.util.Scanner;
+import com.desingpattern.DesignPatternCreations.AbstractMethods.interfaces.DBconecction;
 
 /**
  * 🔥 Ejercicio 3: Base de Datos
@@ -15,5 +15,10 @@ Requisitos:
  */
 
 public class AbstractMethods {
-   
+    DBconecction factory;
+
+    Scanner scanner = new Scanner(System.in);
+    String typeDB = scanner.nextLine();
+
+
 }
