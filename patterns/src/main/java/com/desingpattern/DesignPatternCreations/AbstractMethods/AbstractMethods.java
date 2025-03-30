@@ -20,5 +20,4 @@ public class AbstractMethods {
     Scanner scanner = new Scanner(System.in);
     String typeDB = scanner.nextLine();
 
-
 }
