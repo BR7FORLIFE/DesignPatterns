@@ -1,6 +1,5 @@
 package com.desingpattern.DesignPatternStruct.Adapter;
 
-import com.desingpattern.DesignPatternStruct.Adapter.Interfaces.AdaptadorPaypal;
 import com.desingpattern.DesignPatternStruct.Adapter.Interfaces.PagoConTarjeta;
 
 /**
@@ -23,7 +22,7 @@ import com.desingpattern.DesignPatternStruct.Adapter.Interfaces.PagoConTarjeta;
  * 
  * En la clase Main, prueba ambos métodos de pago.
  */
-public class Adapter {
+public class MainAdapter {
     public static void main(String[] args) {
         PagoConTarjeta pagoTarjeta = new PagoConTarjetaCredito();
         pagoTarjeta.procesarPago(500.0);

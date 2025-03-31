@@ -1,5 +1,5 @@
 package com.desingpattern.DesignPatternCreations.AbstractMethods.interfaces;
 
-public interface DBconecction {
+public interface AbstractFactoryInterfaceDB {
     DBconnectionInterface createConnection();
 }

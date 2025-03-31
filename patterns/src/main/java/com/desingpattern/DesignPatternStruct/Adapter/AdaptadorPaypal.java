@@ -1,6 +1,6 @@
-package com.desingpattern.DesignPatternStruct.Adapter.Interfaces;
+package com.desingpattern.DesignPatternStruct.Adapter;
 
-import com.desingpattern.DesignPatternStruct.Adapter.PagoPaypal;
+import com.desingpattern.DesignPatternStruct.Adapter.Interfaces.PagoConTarjeta;
 
 public class AdaptadorPaypal implements PagoConTarjeta{
     private PagoPaypal pagoPaypal;

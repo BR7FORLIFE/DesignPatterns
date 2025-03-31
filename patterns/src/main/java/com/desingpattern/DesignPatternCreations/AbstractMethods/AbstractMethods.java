@@ -1,6 +1,8 @@
 package com.desingpattern.DesignPatternCreations.AbstractMethods;
-import java.util.Scanner;
-import com.desingpattern.DesignPatternCreations.AbstractMethods.interfaces.DBconecction;
+
+import com.desingpattern.DesignPatternCreations.AbstractMethods.Factorys.MySqlFactory;
+import com.desingpattern.DesignPatternCreations.AbstractMethods.Factorys.PostgreSqlFactory;
+import com.desingpattern.DesignPatternCreations.AbstractMethods.interfaces.AbstractFactoryInterfaceDB;
 
 /**
  * 🔥 Ejercicio 3: Base de Datos
@@ -15,9 +17,17 @@ Requisitos:
  */
 
 public class AbstractMethods {
-    DBconecction factory;
-
-    Scanner scanner = new Scanner(System.in);
-    String typeDB = scanner.nextLine();
+    public static void main(String[] args) {
+        AbstractFactoryInterfaceDB factory;
+        String typeDB = "MySql";
+        
+        if(typeDB.equalsIgnoreCase("MySql")){
+            factory = new MySqlFactory();
+            factory.createConnection();
+        }else if(typeDB.equalsIgnoreCase("PostgreSql")){
+            factory = new PostgreSqlFactory();
+            factory.createConnection();
+        } 
+    }   
 
 }
