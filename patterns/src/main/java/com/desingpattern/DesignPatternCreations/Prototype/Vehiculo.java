@@ -1,8 +1,8 @@
 package com.desingpattern.DesignPatternCreations.Prototype;
 
 public class Vehiculo implements Cloneable {
-    private String marca;
-    private String modelo;
+    private final String marca;
+    private final String modelo;
 
     public Vehiculo(String marca, String modelo) {
         this.marca = marca;
@@ -10,7 +10,7 @@ public class Vehiculo implements Cloneable {
     }
 
     @Override
-    public Vehiculo clone() {
+    public Vehiculo clone() throws CloneNotSupportedException{
         try {
             return (Vehiculo) super.clone(); // Clona la instancia actual
         } catch (CloneNotSupportedException e) {
